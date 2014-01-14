@@ -6,6 +6,9 @@ end
 
 
 # get '/:name' do
-#     name = params[:name]
-#     "hello"
+#   # pull the name out of the params hash
+#   name = params[:name]
+#
+#   # return the name to the browser
+#   name
 # end
