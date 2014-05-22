@@ -23,4 +23,9 @@ class MyAppTest < Test::Unit::TestCase
     get '/marvin'
     assert_equal 'Hello Marvin!', last_response.body
   end
+
+  def test_with_params
+	get '/marvin/bye'
+	assert_euqal 'Goodbye Marvin!', last_response.body
+  end
 end

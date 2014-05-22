@@ -1,14 +1,23 @@
 require 'sinatra'
 
 get '/' do
-    "hello"
+	"Hello there!"
 end
 
 
-# get '/:name' do
-#   # pull the name out of the params hash
-#   name = params[:name]
-#
-#   # return the name to the browser
-#   name
-# end
+get '/:name' do
+   	# pull the name out of the params hash
+	name = params[:name]
+	name.capitalize!
+	# return the name to the browser
+	"Hello #{name}!"
+end
+
+get '/:name/bye' do
+	name = params[:name]
+	name.capitalize!
+	# return the name to the browser
+	"Goodbye #{name}!"
+	
+end
+
