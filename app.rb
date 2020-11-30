@@ -1,9 +1,8 @@
 require 'sinatra'
 
 get '/' do
-    "hello"
+  'hello'
 end
-
 
 # get '/:name' do
 #   # pull the name out of the params hash
